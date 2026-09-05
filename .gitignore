@@ -1,0 +1,13 @@
+# Never commit real secrets to GitHub
+serviceAccountKey.json
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# OS clutter
+.DS_Store
+Thumbs.db
