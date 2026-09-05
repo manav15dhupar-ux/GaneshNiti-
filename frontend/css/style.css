@@ -1,0 +1,123 @@
+:root {
+  --navy: #122A3D;
+  --navy-light: #1E4258;
+  --teal: #0F7173;
+  --teal-light: #E4F3F3;
+  --saffron: #E2711D;
+  --paper: #F7F8F7;
+  --border: #DDE4E3;
+  --green: #2E7D4F;
+  --green-light: #E5F3EA;
+  --amber: #B7791F;
+  --amber-light: #FBF0DD;
+}
+
+body {
+  background: var(--paper);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.app-navbar {
+  background: var(--navy);
+}
+.app-navbar .navbar-brand {
+  color: #fff !important;
+  letter-spacing: 0.3px;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: #fff;
+  padding: 64px 0 56px;
+}
+.hero .eyebrow {
+  color: var(--saffron);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.hero h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  max-width: 720px;
+  margin: 0 auto 14px;
+}
+.hero .lead-text {
+  color: #D9E4E8;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  background: var(--teal);
+  border-color: var(--teal);
+}
+.btn-primary:hover {
+  background: #0b5c5e;
+  border-color: #0b5c5e;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px 20px;
+  height: 100%;
+}
+.feature-num {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  background: var(--teal-light);
+  color: var(--teal);
+  font-weight: 700;
+  margin: 0 auto 14px;
+}
+
+.app-footer {
+  background: #fff;
+  border-top: 1px solid var(--border);
+  color: #5B6B70;
+  font-size: 0.85rem;
+}
+
+/* Scheme result cards */
+.scheme-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px;
+  height: 100%;
+}
+.scheme-card h5 {
+  margin-bottom: 4px;
+}
+.badge-eligible {
+  background: var(--green-light);
+  color: var(--green);
+  font-weight: 600;
+}
+.badge-ineligible {
+  background: #FBEAE9;
+  color: #B3261E;
+  font-weight: 600;
+}
+.match-score {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--teal);
+}
+.scheme-card ul {
+  padding-left: 18px;
+  font-size: 0.9rem;
+}
+.simulated-note {
+  font-size: 0.75rem;
+  color: var(--amber);
+  background: var(--amber-light);
+  border-radius: 6px;
+  padding: 2px 8px;
+  display: inline-block;
+}
