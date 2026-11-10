@@ -147,4 +147,4 @@ Dockerfile, render.yaml      deployment
 | Data / QA | Scheme data verification, testing, demo validation |
 | Documentation / Presentation | README, architecture diagram, slides, demo script |
 
-**My contribution:** _replace with one or two concrete lines — what you personally built or owned._
+My contribution:** Team lead and backend developer (Python / FastAPI). I worked on the backend of the eligibility and recommendation flow and coordinated the team._
