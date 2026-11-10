@@ -90,7 +90,12 @@ def recommend(request: RecommendRequest):
                 }
                 for t in r.trace
             ],
-            "suggestedPartners": []  # Default to empty for non-top schemes
+            "suggestedPartners": [],  # Default to empty for non-top schemes
+            # Source-of-truth details so the user can verify and apply
+            "officialSourceUrl": scheme_lookup[r.scheme_id].get("officialSourceUrl"),
+            "applicationUrl": scheme_lookup[r.scheme_id].get("applicationUrl"),
+            "requiredDocuments": scheme_lookup[r.scheme_id].get("requiredDocuments") or [],
+            "lastVerified": scheme_lookup[r.scheme_id].get("lastVerified"),
         }
 
         # Inject repayment AND channel partners ONLY for the top eligible recommendation

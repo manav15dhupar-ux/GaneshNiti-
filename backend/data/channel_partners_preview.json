@@ -1,0 +1,183 @@
+[
+  {
+    "partnerId": "CP001",
+    "partnerName": "Maharashtra State SC Finance & Development Corporation",
+    "partnerType": "SCA (State Channelising Agency)",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "schemesHandled": [
+      "NSFDC Term Loan",
+      "NSFDC Micro Credit Finance",
+      "NSFDC Educational Loan"
+    ],
+    "address": "Mumbai HQ (mock address for prototype)",
+    "contactNumber": "022-XXXXXXX (mock)",
+    "latitude": 19.076,
+    "longitude": 72.8777,
+    "mockUtilizationStatus": "Available",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  },
+  {
+    "partnerId": "CP002",
+    "partnerName": "Pune District Central Cooperative Bank",
+    "partnerType": "RRB/Cooperative Bank",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "schemesHandled": [
+      "NSFDC Micro Credit Finance",
+      "PMMY (Mudra)"
+    ],
+    "address": "Pune branch (mock address for prototype)",
+    "contactNumber": "020-XXXXXXX (mock)",
+    "latitude": 18.5204,
+    "longitude": 73.8567,
+    "mockUtilizationStatus": "Available",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  },
+  {
+    "partnerId": "CP003",
+    "partnerName": "Bank of Maharashtra - Nagpur Zonal Office",
+    "partnerType": "PSB (Public Sector Bank)",
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "schemesHandled": [
+      "Stand-Up India",
+      "PMEGP",
+      "NSFDC Term Loan"
+    ],
+    "address": "Nagpur zonal office (mock address for prototype)",
+    "contactNumber": "0712-XXXXXXX (mock)",
+    "latitude": 21.1458,
+    "longitude": 79.0882,
+    "mockUtilizationStatus": "High utilization (simulate as needing alternate routing)",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  },
+  {
+    "partnerId": "CP004",
+    "partnerName": "Delhi Scheduled Castes Finance & Development Corporation",
+    "partnerType": "SCA (State Channelising Agency)",
+    "state": "Delhi",
+    "district": "New Delhi",
+    "schemesHandled": [
+      "NSFDC Term Loan",
+      "NSFDC Micro Credit Finance",
+      "NSFDC Educational Loan"
+    ],
+    "address": "New Delhi HQ (mock address for prototype)",
+    "contactNumber": "011-XXXXXXX (mock)",
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "mockUtilizationStatus": "Available",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  },
+  {
+    "partnerId": "CP005",
+    "partnerName": "Karnataka NBC Development Corporation",
+    "partnerType": "SCA (State Channelising Agency)",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban",
+    "schemesHandled": [
+      "NBCFDC Individual Loan Scheme"
+    ],
+    "address": "Bengaluru HQ (mock address for prototype)",
+    "contactNumber": "080-XXXXXXX (mock)",
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "mockUtilizationStatus": "Available",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  },
+  {
+    "partnerId": "CP006",
+    "partnerName": "Tribal Cooperative Marketing Development Federation - Chhattisgarh",
+    "partnerType": "SCA (State Channelising Agency)",
+    "state": "Chhattisgarh",
+    "district": "Raipur",
+    "schemesHandled": [
+      "NSTFDC Term Loan Scheme"
+    ],
+    "address": "Raipur HQ (mock address for prototype)",
+    "contactNumber": "0771-XXXXXXX (mock)",
+    "latitude": 21.2514,
+    "longitude": 81.6296,
+    "mockUtilizationStatus": "Available",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  },
+  {
+    "partnerId": "CP007",
+    "partnerName": "NHFDC-Empanelled NBFC-MFI - Ahmedabad",
+    "partnerType": "NBFC-MFI",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "schemesHandled": [
+      "NHFDC Self-Employment Loan Scheme"
+    ],
+    "address": "Ahmedabad branch (mock address for prototype)",
+    "contactNumber": "079-XXXXXXX (mock)",
+    "latitude": 23.0225,
+    "longitude": 72.5714,
+    "mockUtilizationStatus": "Available",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  },
+  {
+    "partnerId": "CP008",
+    "partnerName": "Punjab National Bank - Lucknow Regional Office",
+    "partnerType": "PSB (Public Sector Bank)",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "schemesHandled": [
+      "Stand-Up India",
+      "PMMY (Mudra)",
+      "NSFDC Term Loan"
+    ],
+    "address": "Lucknow regional office (mock address for prototype)",
+    "contactNumber": "0522-XXXXXXX (mock)",
+    "latitude": 26.8467,
+    "longitude": 80.9462,
+    "mockUtilizationStatus": "High utilization (simulate as needing alternate routing)",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  },
+  {
+    "partnerId": "CP009",
+    "partnerName": "West Bengal SC & ST Development & Finance Corporation",
+    "partnerType": "SCA (State Channelising Agency)",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "schemesHandled": [
+      "NSFDC Term Loan",
+      "NSFDC Micro Credit Finance",
+      "NSTFDC Term Loan Scheme"
+    ],
+    "address": "Kolkata HQ (mock address for prototype)",
+    "contactNumber": "033-XXXXXXX (mock)",
+    "latitude": 22.5726,
+    "longitude": 88.3639,
+    "mockUtilizationStatus": "Available",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  },
+  {
+    "partnerId": "CP010",
+    "partnerName": "KVIC Regional Office - Chennai",
+    "partnerType": "Implementing Agency (PMEGP)",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "schemesHandled": [
+      "PMEGP"
+    ],
+    "address": "Chennai regional office (mock address for prototype)",
+    "contactNumber": "044-XXXXXXX (mock)",
+    "latitude": 13.0827,
+    "longitude": 80.2707,
+    "mockUtilizationStatus": "Available",
+    "notes": "Simulated data for demo -- not a real contact",
+    "isSimulatedData": true
+  }
+]

@@ -1,0 +1,14 @@
+# Render Blueprint: Dashboard -> New -> Blueprint -> pick this repo.
+services:
+  - type: web
+    name: ganeshniti
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: OPENROUTER_API_KEY   # optional: enables free-text understanding
+        sync: false
+      - key: OPENROUTER_MODEL     # optional override
+        sync: false
