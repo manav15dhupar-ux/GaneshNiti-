@@ -4,8 +4,7 @@
 
 An AI-assisted web app that helps Scheduled Caste entrepreneurs and students find the right NSFDC credit scheme, see **exactly why** they are or aren't eligible, estimate their real repayment figure, and find a Channel Partner to apply through — without needing to understand government scheme jargon first.
 
-**Live demo:** _add your Render URL here after deploying (see [Deploy](#deploy))_
-<!-- ![Results page](docs/results.png)  ← add a screenshot of the results page; it is the single most useful thing to add -->
+   **Live demo:** https://ganeshniti.onrender.com (free hosting: the first visit after a quiet period can take up to a minute to wake up)
 
 **Core principle: AI understands the person; verified rules decide eligibility.**
 The LLM never decides who qualifies. It only turns a plain-language description into structured data. Deterministic, unit-tested Python rules decide eligibility using NSFDC's own published numeric criteria, and every decision comes with a numeric trace (your value vs. the scheme's limit, pass/fail).
