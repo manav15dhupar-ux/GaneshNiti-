@@ -59,6 +59,7 @@ IMPORTANT NOTES FOR THE TEAM
 
 import argparse
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -234,11 +235,13 @@ def main():
     print(f"\nRead {len(partner_rows)} channel partner rows (all treated as simulated demo data)")
 
     if args.dry_run:
-        with open("schemes_preview.json", "w", encoding="utf-8") as f:
+        # The backend reads its fallback data from backend/data/ (see services/firestore_client.py)
+        os.makedirs("../backend/data", exist_ok=True)
+        with open("../backend/data/schemes_preview.json", "w", encoding="utf-8") as f:
             json.dump(verified_schemes, f, indent=2, ensure_ascii=False)
-        with open("channel_partners_preview.json", "w", encoding="utf-8") as f:
+        with open("../backend/data/channel_partners_preview.json", "w", encoding="utf-8") as f:
             json.dump(partner_docs, f, indent=2, ensure_ascii=False)
-        print("\nDRY RUN COMPLETE. Wrote schemes_preview.json and channel_partners_preview.json")
+        print("\nDRY RUN COMPLETE. Wrote backend/data/schemes_preview.json and backend/data/channel_partners_preview.json")
         print("Inspect these, then re-run without --dry-run once Firebase credentials are ready.")
         return
 

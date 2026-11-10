@@ -1,0 +1,607 @@
+[
+  {
+    "schemeId": "SUI001",
+    "schemeName": "Stand-Up India Scheme",
+    "organization": "Department of Financial Services (Ministry of Finance); SIDBI (nodal agency)",
+    "schemeType": "Composite Term Loan + Working Capital (Bank loan scheme)",
+    "description": "Facilitates composite bank loans between Rs.10 lakh and Rs.1 crore to at least one SC/ST borrower and one woman borrower per bank branch, for setting up a new greenfield enterprise in manufacturing, services, or trading.",
+    "entrepreneurshipRelevance": "Core entrepreneurship scheme; directly funds setting up a new business for SC/ST/women entrepreneurs.",
+    "targetGroups": [
+      "SC",
+      "ST",
+      "Women"
+    ],
+    "genderRequirement": "At least one woman borrower per bank branch (any category); SC/ST borrowers may be any gender",
+    "stateRestriction": "None (all-India, via bank branches)",
+    "otherBeneficiaryConditions": "Borrower/promoter must hold at least 51% controlling stake; must be a first-time entrepreneur for a greenfield project",
+    "beneficiaryContribution": "Minimum 10% of project cost as margin money (up to 15% via convergence with other schemes)",
+    "interestRate": "Bank's lowest applicable rate for the category (base rate + tenor premium + up to 3%); not centrally fixed, varies by bank",
+    "repaymentPeriod": "Up to 7 years",
+    "moratoriumPeriod": "Up to 18 months",
+    "businessTypes": [
+      "Manufacturing",
+      "Services",
+      "Trading"
+    ],
+    "supportedPurposes": [
+      "New greenfield enterprise setup",
+      "equipment/machinery purchase",
+      "working capital"
+    ],
+    "eligibleActivities": [
+      "Any new (greenfield) enterprise in manufacturing, services, or trading sector"
+    ],
+    "newBusinessAllowed": true,
+    "existingBusinessAllowed": false,
+    "eligibilityRules": "Applicant must be SC and/or ST and/or woman entrepreneur; age 18+; project must be greenfield; applicant must hold >=51% controlling stake",
+    "mandatoryConditions": "First-time entrepreneur; greenfield (new) project only; not a defaulter to any bank/financial institution",
+    "exclusionConditions": "Existing/brownfield businesses; loan defaulters",
+    "requiredDocuments": [
+      "Identity proof (Aadhaar/PAN/Voter ID)",
+      "caste certificate (for SC/ST applicants)",
+      "address proof",
+      "Detailed Project Report (DPR)",
+      "bank account details"
+    ],
+    "optionalDocuments": [
+      "Educational/technical qualification certificates",
+      "experience certificates"
+    ],
+    "applicationMethod": "Online via Stand-Up Mitra portal, then processed by the nominated bank branch",
+    "applicationAuthority": "Scheduled Commercial Bank branches, coordinated by SIDBI/Department of Financial Services",
+    "channelisingAgency": "Public and private sector Scheduled Commercial Banks; SIDBI (nodal)",
+    "applicationUrl": "https://www.standupmitra.in/",
+    "officialSourceUrl": "https://www.standupmitra.in/ ; https://nsfdc.nic.in/en/stand-up-india",
+    "sourceDocument": "Department of Financial Services - Stand-Up India Scheme guidelines",
+    "sourceDate": "Launched 5 Apr 2016; guidelines periodically revised",
+    "lastVerified": "2026-08-29",
+    "verificationNotes": "Core loan range (Rs.10L-Rs.1Cr), 7-year repayment and 18-month moratorium cross-confirmed across NSFDC's official page and multiple secondary sources. Several 2025-2026 news reports describe a proposed revamp that would double the ceiling to Rs.2 crore, but this was NOT confirmed as officially implemented as of verification date. RE-CHECK standupmitra.in / dfs.gov.in before final demo if the exact ceiling matters.",
+    "dataStatus": "verified (re-check loan ceiling closer to demo date)",
+    "incomeLimit": null,
+    "incomeLimitRaw": "No income criteria prescribed",
+    "minimumLoanAmount": 1000000,
+    "maximumLoanAmount": 10000000,
+    "maximumProjectCost": null,
+    "maximumProjectCostRaw": "Loan is composite (term loan + working capital); typically covers 85% of project cost",
+    "minimumAge": 18,
+    "maximumAge": null,
+    "maximumAgeRaw": "Not specified"
+  },
+  {
+    "schemeId": "PMEGP002",
+    "schemeName": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "organization": "Ministry of Micro, Small and Medium Enterprises; implemented by KVIC, State KVIBs, and District Industries Centres (DICs)",
+    "schemeType": "Credit-linked capital (margin money) subsidy scheme",
+    "description": "Credit-linked subsidy scheme for setting up new micro-enterprises in the non-farm sector. The bank finances the project as a loan; the government subsidises 15-35% of the project cost as margin money, held in a 3-year term deposit.",
+    "entrepreneurshipRelevance": "Directly funds new micro-enterprise setup with a government subsidy on the loan.",
+    "targetGroups": [
+      "General",
+      "SC",
+      "ST",
+      "OBC",
+      "Minorities",
+      "Women",
+      "Ex-servicemen",
+      "PwD",
+      "Transgender persons",
+      "residents of NER/Hill/Border/Aspirational districts"
+    ],
+    "genderRequirement": "None mandatory; women fall under the Special Category with a higher subsidy rate",
+    "stateRestriction": "None (all-India)",
+    "otherBeneficiaryConditions": "Only one person per family eligible; minimum 8th-standard pass required if project cost exceeds Rs.10 lakh (manufacturing) or Rs.5 lakh (service)",
+    "beneficiaryContribution": "10% of project cost (General category); 5% (Special category)",
+    "interestRate": "Normal bank MSE lending rate, typically ~11-12% p.a. (varies by bank)",
+    "repaymentPeriod": "Bank term-loan tenor per sanction, typically up to 3 years post subsidy adjustment (subject to bank terms)",
+    "moratoriumPeriod": "Approximately 6 months",
+    "businessTypes": [
+      "Manufacturing",
+      "Service",
+      "Trading/Business (trading capped at max 10% of a state's annual financial allocation)"
+    ],
+    "supportedPurposes": [
+      "New unit setup",
+      "machinery/equipment purchase",
+      "working capital (as part of composite loan)"
+    ],
+    "eligibleActivities": [
+      "Wide range of non-farm micro-enterprise activities per the KVIC-approved activity list"
+    ],
+    "newBusinessAllowed": true,
+    "existingBusinessAllowed": false,
+    "eligibilityRules": "Age 18+; new project only; one beneficiary per family; minimum 8th pass for larger projects",
+    "mandatoryConditions": "Must complete Entrepreneurship Development Programme (EDP) training before margin money is released",
+    "exclusionConditions": "Existing PMEGP/REGP/MUDRA beneficiaries not eligible for a fresh first loan under this scheme; project cost exceeding the sector cap",
+    "requiredDocuments": [
+      "Identity proof",
+      "address proof",
+      "educational certificate (if applicable)",
+      "caste/category certificate (for special-category subsidy rate)",
+      "project report"
+    ],
+    "optionalDocuments": [
+      "Passport-size photo",
+      "EDP completion certificate (post-sanction, required before margin money release)"
+    ],
+    "applicationMethod": "Online via the PMEGP e-Portal",
+    "applicationAuthority": "KVIC / State KVIBs / District Industries Centres (implementing agencies); Banks (financing)",
+    "channelisingAgency": "Public Sector Banks, RRBs, Cooperative Banks, and private banks empanelled with KVIC",
+    "applicationUrl": "https://www.kviconline.gov.in/pmegpeportal/",
+    "officialSourceUrl": "https://www.kviconline.gov.in/pmegpeportal/dashboard/notification/PMEGP_Guidelines_Certified_2022_3.pdf",
+    "sourceDocument": "PMEGP Guidelines (KVIC, certified 2022 revision; project-cost ceiling updated per Union Budget 2023-24)",
+    "sourceDate": "2022 (guideline revision); manufacturing ceiling raised to Rs.50L effective post Budget 2023-24",
+    "lastVerified": "2026-08-29",
+    "verificationNotes": "Subsidy grid (General: 15% urban/25% rural; Special: 25% urban/35% rural) and project cost ceilings (Rs.50L manufacturing / Rs.20L service) cross-verified against KVIC's own certified guidelines PDF and multiple independent secondary sources; figures are consistent.",
+    "dataStatus": "verified",
+    "incomeLimit": null,
+    "incomeLimitRaw": "No income ceiling",
+    "minimumLoanAmount": null,
+    "minimumLoanAmountRaw": "Not fixed (depends on project cost)",
+    "maximumLoanAmount": null,
+    "maximumLoanAmountRaw": "Bank credit of 90-95% of project cost (up to ~Rs.47.5 lakh manufacturing / ~Rs.19 lakh service, after margin money)",
+    "maximumProjectCost": null,
+    "maximumProjectCostRaw": "Rs.50,00,000 (manufacturing sector); Rs.20,00,000 (service/business/trading sector)",
+    "minimumAge": 18,
+    "maximumAge": null,
+    "maximumAgeRaw": "Not specified"
+  },
+  {
+    "schemeId": "PMMY003",
+    "schemeName": "Pradhan Mantri Mudra Yojana (PMMY / MUDRA loans)",
+    "organization": "MUDRA Ltd. (Micro Units Development & Refinance Agency), Ministry of Finance",
+    "schemeType": "Collateral-free micro loan (refinance scheme operated via banks/NBFCs/MFIs)",
+    "description": "Collateral-free loans up to Rs.20 lakh to non-corporate, non-farm micro and small enterprises, structured across four tiers: Shishu, Kishor, Tarun, and Tarun Plus.",
+    "entrepreneurshipRelevance": "Directly funds micro-enterprise setup and expansion at multiple scales, from very small to established micro businesses.",
+    "targetGroups": [
+      "General (all categories)",
+      "no caste/gender restriction, though women/SC/ST/minority applicants are often prioritised by lending banks"
+    ],
+    "genderRequirement": "None mandatory",
+    "stateRestriction": "None (all-India)",
+    "otherBeneficiaryConditions": "Business must be non-corporate and non-farm; Tarun Plus requires a prior successfully repaid Tarun-category loan",
+    "beneficiaryContribution": "Varies by lender; not centrally fixed",
+    "interestRate": "Lender's MCLR + spread; not fixed centrally by government, varies by bank/NBFC",
+    "repaymentPeriod": "Typically up to 5 years (varies by lender and tier)",
+    "moratoriumPeriod": "Lender-dependent; not centrally fixed",
+    "businessTypes": [
+      "Manufacturing",
+      "Trading",
+      "Services",
+      "Transport",
+      "Allied non-farm agricultural activities (e.g. dairy, poultry, beekeeping)"
+    ],
+    "supportedPurposes": [
+      "New business setup",
+      "working capital",
+      "equipment/vehicle purchase",
+      "business expansion"
+    ],
+    "eligibleActivities": [
+      "Tailoring, kirana/trading, food processing, repair services, transport vehicles, salons, small manufacturing, allied activities",
+      "pure crop agriculture excluded"
+    ],
+    "newBusinessAllowed": true,
+    "existingBusinessAllowed": true,
+    "eligibilityRules": "Indian resident; age 18+; non-corporate non-farm income-generating activity; no major default on existing loans",
+    "mandatoryConditions": "Aadhaar, PAN, and bank account mandatory; business proof (GST/Udyam/Shop Act licence/partnership deed) required for Kishor/Tarun/Tarun Plus",
+    "exclusionConditions": "Pure crop-agriculture activities not covered (Kisan Credit Card applies instead); corporate entities not eligible",
+    "requiredDocuments": [
+      "Identity proof (Aadhaar)",
+      "PAN card",
+      "address proof",
+      "passport-size photo",
+      "business proof/quotation for machinery",
+      "bank statements (Kishor/Tarun/Tarun Plus)"
+    ],
+    "optionalDocuments": [
+      "Udyam registration certificate",
+      "GST registration"
+    ],
+    "applicationMethod": "Apply at any PSU/private bank, RRB, Small Finance Bank, or NBFC branch; or online via Udyamimitra/Jan Samarth portal",
+    "applicationAuthority": "Scheduled Commercial Banks, RRBs, Small Finance Banks, NBFCs, MFIs (Member Lending Institutions)",
+    "channelisingAgency": "Member Lending Institutions (MLIs), refinanced by MUDRA Ltd.",
+    "applicationUrl": "https://www.udyamimitra.in/ ; https://www.jansamarth.in/",
+    "officialSourceUrl": "https://www.mudra.org.in/ ; https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2069170",
+    "sourceDocument": "PIB Press Release: enhancement of Mudra loan limit to Rs.20 lakh (Tarun Plus)",
+    "sourceDate": "Announced 2024-07-23 (Union Budget 2024-25); effective 2024-10-24",
+    "lastVerified": "2026-08-29",
+    "verificationNotes": "Rs.20 lakh Tarun Plus ceiling and the four-tier structure confirmed via official PIB press release. Interest rates are lender-specific and NOT fixed by government -- do not hardcode a single percentage in the eligibility engine.",
+    "dataStatus": "verified",
+    "incomeLimit": null,
+    "incomeLimitRaw": "None specified",
+    "minimumLoanAmount": 1,
+    "maximumLoanAmount": 2000000,
+    "maximumProjectCost": null,
+    "maximumProjectCostRaw": "Loan typically covers the full micro-project cost within tier limits",
+    "minimumAge": 18,
+    "maximumAge": null,
+    "maximumAgeRaw": "Not specified"
+  },
+  {
+    "schemeId": "NSTFDC004",
+    "schemeName": "NSTFDC Term Loan Scheme (Scheduled Tribes)",
+    "organization": "National Scheduled Tribes Finance and Development Corporation (NSTFDC), Ministry of Tribal Affairs",
+    "schemeType": "Concessional Term Loan",
+    "description": "Term loan for any viable income-generation project costing up to Rs.50 lakh per unit for Scheduled Tribe entrepreneurs, with financial assistance up to 90% of project cost.",
+    "entrepreneurshipRelevance": "Core entrepreneurship/self-employment funding for Scheduled Tribe persons.",
+    "targetGroups": [
+      "ST (Scheduled Tribes)"
+    ],
+    "genderRequirement": "None mandatory (a separate exclusive scheme, Adivasi Mahila Sashaktikaran Yojana, exists for ST women)",
+    "stateRestriction": "None (all-India, via State Channelising Agencies)",
+    "otherBeneficiaryConditions": "For SHGs/co-operative societies, a minimum of 80% of members must belong to Scheduled Tribes",
+    "beneficiaryContribution": "Remaining balance (~10%) via subsidy/promoter contribution/margin money",
+    "interestRate": "6% to 10% p.a. depending on loan slab",
+    "repaymentPeriod": "5 to 10 years depending on loan amount",
+    "moratoriumPeriod": "Not centrally fixed; per Channelising Agency sanction terms",
+    "businessTypes": [
+      "Any viable business, trade, or service activity"
+    ],
+    "supportedPurposes": [
+      "Setting up a new income-generating unit",
+      "equipment/machinery purchase",
+      "working capital"
+    ],
+    "eligibleActivities": [
+      "Agriculture and allied activities",
+      "small business/trade",
+      "service sector",
+      "industrial activities"
+    ],
+    "newBusinessAllowed": true,
+    "existingBusinessAllowed": true,
+    "eligibilityRules": "Applicant must belong to a Scheduled Tribe community; annual family income within double the poverty line (~Rs.3 lakh); not a defaulter to any bank/financial institution",
+    "mandatoryConditions": "ST caste certificate; project must be assessed as viable by the Channelising Agency",
+    "exclusionConditions": "Applicants above the income threshold; loan defaulters",
+    "requiredDocuments": [
+      "ST caste certificate",
+      "income certificate",
+      "identity proof",
+      "address proof",
+      "project report"
+    ],
+    "optionalDocuments": [
+      "Educational/technical qualification certificates",
+      "experience certificate"
+    ],
+    "applicationMethod": "Apply through the State Channelising Agency (SCA) in the prescribed format",
+    "applicationAuthority": "NSTFDC (apex), via State Channelising Agencies",
+    "channelisingAgency": "State ST Finance/Development Corporations; nominated banks; NEDFi (for NE states)",
+    "applicationUrl": "https://nstfdc.tribal.gov.in/",
+    "officialSourceUrl": "https://nstfdc.tribal.gov.in/ ; https://www.pib.gov.in/PressReleasePage.aspx?PRID=2153514",
+    "sourceDocument": "NSTFDC Scheme Guidelines; PIB press release (Lok Sabha reply, Ministry of Tribal Affairs)",
+    "sourceDate": "Lok Sabha reply figures, 2024-2025",
+    "lastVerified": "2026-08-29",
+    "verificationNotes": "Income limit of Rs.3,00,000 p.a. (rural and urban) directly confirmed on the official NSTFDC Term Loan eligibility page (nstfdc.tribal.gov.in, frm_term_loan.aspx) on 2026-08-29. Note: the source states this figure is revised from time to time based on Planning Commission poverty-line norms, so it should be periodically re-checked in future use, but is treated as current and verified for this hackathon.",
+    "dataStatus": "verified",
+    "incomeLimit": 300000,
+    "minimumLoanAmount": null,
+    "minimumLoanAmountRaw": "Not fixed",
+    "maximumLoanAmount": 5000000,
+    "maximumProjectCost": 5000000,
+    "minimumAge": 18,
+    "maximumAge": null,
+    "maximumAgeRaw": "Not specified"
+  },
+  {
+    "schemeId": "NBCFDC005",
+    "schemeName": "NBCFDC Individual Loan Scheme (Backward Classes)",
+    "organization": "National Backward Classes Finance & Development Corporation (NBCFDC), Ministry of Social Justice & Empowerment",
+    "schemeType": "Term Loan",
+    "description": "Loans for income-generating activities for members of Backward Classes with annual family income up to Rs.5 lakh, up to Rs.25 lakh per beneficiary.",
+    "entrepreneurshipRelevance": "Core self-employment/entrepreneurship funding for OBC individuals.",
+    "targetGroups": [
+      "OBC (Other Backward Classes, as notified by Central/State Government)"
+    ],
+    "genderRequirement": "None mandatory (a separate exclusive scheme, New Swarnima, exists for OBC women)",
+    "stateRestriction": "None (all-India, via State Channelising Agencies)",
+    "otherBeneficiaryConditions": "OBC caste certificate from the Central list (ncbc.gov.in) or the applicable State list is required",
+    "beneficiaryContribution": "15% (Channel Partner/Beneficiary share)",
+    "interestRate": "Varies by loan slab; concessional rates for smaller loan amounts per NBCFDC's published rate structure",
+    "repaymentPeriod": "Up to 8 years, including moratorium (per NBCFDC General Loan structure)",
+    "moratoriumPeriod": "6 months",
+    "businessTypes": [
+      "Agriculture and Allied",
+      "Small Business/Artisan and Traditional Occupation",
+      "Transport",
+      "Service Sector",
+      "Technical/Professional Trades"
+    ],
+    "supportedPurposes": [
+      "New income-generating activity setup",
+      "equipment purchase",
+      "working capital"
+    ],
+    "eligibleActivities": [
+      "Wide range of viable income-generating activities across the listed sectors"
+    ],
+    "newBusinessAllowed": true,
+    "existingBusinessAllowed": true,
+    "eligibilityRules": "Applicant must belong to a notified OBC caste; annual family income up to Rs.5 lakh",
+    "mandatoryConditions": "OBC caste certificate from competent authority",
+    "exclusionConditions": "Annual family income above Rs.5 lakh; non-OBC applicants",
+    "requiredDocuments": [
+      "OBC caste certificate",
+      "income certificate",
+      "identity proof",
+      "address proof",
+      "project proposal"
+    ],
+    "optionalDocuments": [
+      "Educational/technical qualification certificates"
+    ],
+    "applicationMethod": "Apply through the State Channelising Agency (SCA) or Channel Partner",
+    "applicationAuthority": "NBCFDC (apex), via State Channelising Agencies/Channel Partners",
+    "channelisingAgency": "State-level OBC finance/development corporations; nominated banks/NBFCs",
+    "applicationUrl": "https://nbcfdc.gov.in/",
+    "officialSourceUrl": "https://nbcfdc.gov.in/nbcfdc/web/individual-loan-scheme",
+    "sourceDocument": "NBCFDC Individual Loan Scheme page (official website)",
+    "sourceDate": "Current as published on official site (undated revision -- recommend periodic re-check)",
+    "lastVerified": "2026-08-29",
+    "verificationNotes": "Core figures (Rs.5 lakh income limit, Rs.25 lakh max loan, 85:15 financing pattern) taken directly from NBCFDC's own official website page for the Individual Loan Scheme -- considered the highest-confidence source used in this dataset.",
+    "dataStatus": "verified",
+    "incomeLimit": 500000,
+    "minimumLoanAmount": null,
+    "minimumLoanAmountRaw": "Not fixed",
+    "maximumLoanAmount": 2500000,
+    "maximumProjectCost": null,
+    "maximumProjectCostRaw": "Loan covers 85% of project cost (implied project cost up to approximately Rs.29.4 lakh)",
+    "minimumAge": 18,
+    "maximumAge": null,
+    "maximumAgeRaw": "Not specified"
+  },
+  {
+    "schemeId": "NHFDC006",
+    "schemeName": "NHFDC Self-Employment Loan Scheme (Persons with Disabilities)",
+    "organization": "National Handicapped Finance and Development Corporation (NHFDC), Department of Empowerment of Persons with Disabilities, Ministry of Social Justice & Empowerment",
+    "schemeType": "Concessional Term Loan",
+    "description": "Concessional loans to persons with disabilities (40%+ disability) for setting up self-employment ventures across business, trading, transport, small industry, and agriculture-allied activities.",
+    "entrepreneurshipRelevance": "Core entrepreneurship/self-employment funding for persons with disabilities.",
+    "targetGroups": [
+      "PwD (Persons with Disabilities, 40%+ disability as defined under the RPwD Act 2016)"
+    ],
+    "genderRequirement": "None mandatory; women with disabilities receive an additional 1% interest rebate across NHFDC schemes",
+    "stateRestriction": "None (all-India, via State Channelising Agencies)",
+    "otherBeneficiaryConditions": "Applicant should not already be covered under another central/state government financing scheme for the same purpose",
+    "beneficiaryContribution": "Varies by loan slab; not centrally fixed in sources reviewed",
+    "interestRate": "Concessional, varies by loan slab and category; additional 1% rebate for women with disabilities",
+    "repaymentPeriod": "Up to 10 years (general scheme)",
+    "moratoriumPeriod": "Not centrally fixed; per SCA sanction terms",
+    "businessTypes": [
+      "Small Business (Service/Trading)",
+      "Transport",
+      "Small Industrial units",
+      "Agriculture-allied"
+    ],
+    "supportedPurposes": [
+      "New self-employment venture setup",
+      "equipment/vehicle purchase",
+      "working capital"
+    ],
+    "eligibleActivities": [
+      "Wide range of income-generating self-employment activities suited to the applicant's ability and training"
+    ],
+    "newBusinessAllowed": true,
+    "existingBusinessAllowed": true,
+    "eligibilityRules": "Indian citizen with 40%+ disability; age 18-60 (14+ in case of intellectual disability, per one source); relevant technical/vocational qualification or experience preferred",
+    "mandatoryConditions": "Disability certificate (40%+) from competent medical authority; applicant should not be a loan defaulter",
+    "exclusionConditions": "Disability below 40%; already covered under another government financing scheme for the same purpose",
+    "requiredDocuments": [
+      "Disability certificate",
+      "age/income certificate",
+      "identity proof",
+      "educational/technical qualification certificate",
+      "experience certificate",
+      "project report and quotation"
+    ],
+    "optionalDocuments": [
+      "Caste certificate (if also SC/ST/OBC, for combined-benefit consideration)"
+    ],
+    "applicationMethod": "Apply through the State Channelising Agency in the prescribed format; loans above Rs.10 lakh sanctioned directly by NHFDC",
+    "applicationAuthority": "NHFDC (apex), via State Channelising Agencies / select nationalised banks / RRBs in select states",
+    "channelisingAgency": "State Channelising Agencies (SCAs) nominated by respective state governments",
+    "applicationUrl": "https://www.nhfdc.nic.in/",
+    "officialSourceUrl": "https://www.nhfdc.nic.in/",
+    "sourceDocument": "NHFDC scheme summary (compiled from Vikaspedia and state SCA portals citing NHFDC norms)",
+    "sourceDate": "Not explicitly dated in sources reviewed",
+    "lastVerified": "2026-08-29",
+    "verificationNotes": "Income limit directly confirmed on the official NHFDC website (nhfdc.nic.in), Offerings > Beneficiary Guidelines > Eligibility Requirements, on 2026-08-29: annual family income must not exceed Rs.5,00,000 for BOTH rural and urban areas, effective 7 January 2026 (Credit/Loan-Based Schemes). No income criterion applies to Skill Development Training Programmes. This corrects the earlier Rs.5L urban / Rs.3L rural split, which was based on secondary sources and is now known to be outdated/incorrect -- the current rule is a single flat Rs.5 lakh limit for both areas.",
+    "dataStatus": "verified",
+    "incomeLimit": 500000,
+    "minimumLoanAmount": null,
+    "minimumLoanAmountRaw": "Not fixed",
+    "maximumLoanAmount": 500000,
+    "maximumProjectCost": null,
+    "maximumProjectCostRaw": "Varies by activity category (business/trading, transport, small industry each have separate published sub-limits)",
+    "minimumAge": 18,
+    "maximumAge": 60
+  },
+  {
+    "schemeId": "NSFDC007",
+    "schemeName": "NSFDC Term Loan Scheme (Scheduled Castes)",
+    "organization": "National Scheduled Castes Finance and Development Corporation (NSFDC), Ministry of Social Justice & Empowerment",
+    "schemeType": "Concessional Term Loan",
+    "description": "Provides loans up to 90% of project cost (project cost ceiling Rs.50 lakh; term loan up to Rs.45 lakh) to Scheduled Caste entrepreneurs for income-generating activities.",
+    "entrepreneurshipRelevance": "Core entrepreneurship/self-employment funding for Scheduled Caste persons.",
+    "targetGroups": [
+      "SC (Scheduled Castes)"
+    ],
+    "genderRequirement": "None mandatory; women receive a 0.5% interest rebate under some NSFDC schemes (e.g. education loan)",
+    "stateRestriction": "None (all-India, via State Channelising Agencies)",
+    "otherBeneficiaryConditions": "Applicant must not be a defaulter to any bank/financial institution",
+    "beneficiaryContribution": "Remaining balance (~10%) via subsidy/promoter contribution",
+    "interestRate": "NSFDC charges 4% p.a. to the Channelising Agency, which in turn charges 8% p.a. to the beneficiary",
+    "repaymentPeriod": "Up to 7 years (quarterly instalments)",
+    "moratoriumPeriod": "6 months (12 months for plantation/construction activities)",
+    "businessTypes": [
+      "Agriculture and Allied",
+      "Industrial",
+      "Service Sector",
+      "Transport Sector"
+    ],
+    "supportedPurposes": [
+      "New income-generating unit setup",
+      "equipment/machinery purchase",
+      "working capital"
+    ],
+    "eligibleActivities": [
+      "Wide range of income-generating activities per NSFDC's approved sector list"
+    ],
+    "newBusinessAllowed": true,
+    "existingBusinessAllowed": true,
+    "eligibilityRules": "Applicant must belong to a Scheduled Caste community; annual family income within the prescribed limit; not a loan defaulter",
+    "mandatoryConditions": "SC caste certificate; project appraisal/viability assessment by the Channelising Agency",
+    "exclusionConditions": "Income above the prescribed limit; loan defaulters",
+    "requiredDocuments": [
+      "SC caste certificate",
+      "income certificate",
+      "identity proof",
+      "address proof",
+      "project report"
+    ],
+    "optionalDocuments": [
+      "Educational/technical qualification certificates",
+      "experience certificate"
+    ],
+    "applicationMethod": "Apply through the State Channelising Agency (SCA) in the prescribed NSFDC format",
+    "applicationAuthority": "NSFDC (apex), via State Channelising Agencies",
+    "channelisingAgency": "State SC Development Corporations (SCDCs); Public Sector Banks; Regional Rural Banks",
+    "applicationUrl": "https://nsfdc.nic.in/",
+    "officialSourceUrl": "https://nsfdc.nic.in/en/term-loan",
+    "sourceDocument": "NSFDC Term Loan Scheme page (official site); PIB Press Release on SC loan provisions",
+    "sourceDate": "2026 (PIB release figures)",
+    "lastVerified": "2026-08-29",
+    "verificationNotes": "Income limit of Rs.3,00,000 p.a. (rural and urban, effective from 08.03.2018) for Credit Based Schemes directly confirmed on the official NSFDC Eligibility Criteria page (nsfdc.nic.in/en/eligibility-criteria) on 2026-08-29. This supersedes the earlier Rs.5 lakh figure taken from a PIB release, which was likely referring to a different NSFDC scheme or programme. Loan amount, interest rate, and repayment period were separately confirmed on the official nsfdc.nic.in Term Loan page.",
+    "dataStatus": "verified",
+    "incomeLimit": 300000,
+    "minimumLoanAmount": 125000,
+    "maximumLoanAmount": 4500000,
+    "maximumProjectCost": 5000000,
+    "minimumAge": 18,
+    "maximumAge": null,
+    "maximumAgeRaw": "Not specified"
+  },
+  {
+    "schemeId": "NSFDC008",
+    "schemeName": "NSFDC Micro Credit Finance Scheme",
+    "organization": "National Scheduled Castes Finance and Development Corporation (NSFDC), Ministry of Social Justice & Empowerment",
+    "schemeType": "Concessional Micro Term Loan",
+    "description": "Small-ticket loans for Scheduled Caste individuals to set up micro income-generating units costing up to Rs.1,40,000, financed up to 90% of project cost with a maximum loan of Rs.1.25 lakh.",
+    "entrepreneurshipRelevance": "Directly matches the PS-cited 'Micro Finance Scheme for small projects (up to Rs.1.40 lakh)' -- the smallest-ticket entry point for first-time SC micro-entrepreneurs.",
+    "targetGroups": [
+      "SC (Scheduled Castes)"
+    ],
+    "genderRequirement": "None mandatory",
+    "stateRestriction": "None (all-India, via State Channelising Agencies)",
+    "otherBeneficiaryConditions": "Applicant must not be a defaulter to any bank/financial institution",
+    "beneficiaryContribution": "Remaining balance (~10%) via subsidy/promoter contribution",
+    "interestRate": "NSFDC charges 2.5% p.a. to the Channelising Agency, which in turn charges 6.5% p.a. to the beneficiary",
+    "repaymentPeriod": "Up to 3 years (quarterly instalments)",
+    "moratoriumPeriod": "3 months",
+    "businessTypes": [
+      "Micro trade and service units (very small scale)"
+    ],
+    "supportedPurposes": [
+      "Setting up a very small income-generating unit",
+      "equipment/stock purchase"
+    ],
+    "eligibleActivities": [
+      "Betel leaf shop, bakery, candle making, cycle repair, goat rearing, beauty parlour, vegetable vending, incense stick making, fish vending, milch animal rearing, papad/pickle manufacturing, tea shop, and similar viable micro-activities"
+    ],
+    "newBusinessAllowed": true,
+    "existingBusinessAllowed": true,
+    "eligibilityRules": "Applicant must belong to Scheduled Caste community; annual family income within Rs.3 lakh; project cost within Rs.1.40 lakh",
+    "mandatoryConditions": "SC caste certificate; project cost must not exceed the Rs.1.40 lakh ceiling",
+    "exclusionConditions": "Project cost above Rs.1.40 lakh (use Term Loan Scheme instead); income above prescribed limit; loan defaulters",
+    "requiredDocuments": [
+      "SC caste certificate",
+      "income certificate",
+      "identity proof",
+      "address proof",
+      "simple project proposal"
+    ],
+    "optionalDocuments": [
+      "Quotation for equipment/stock, if available"
+    ],
+    "applicationMethod": "Apply through the State Channelising Agency (SCA) in the prescribed NSFDC format",
+    "applicationAuthority": "NSFDC (apex), via State Channelising Agencies",
+    "channelisingAgency": "State SC Development Corporations (SCDCs); Public Sector Banks; Regional Rural Banks",
+    "applicationUrl": "https://nsfdc.nic.in/",
+    "officialSourceUrl": "https://nsfdc.nic.in/en/micro-credit-finance",
+    "sourceDocument": "NSFDC Micro Credit Finance scheme page (official site)",
+    "sourceDate": "Current as published on official site",
+    "lastVerified": "2026-08-30",
+    "verificationNotes": "Core figures (Rs.1.40 lakh project cost ceiling, Rs.1.25 lakh max loan, 2.5%/6.5% interest structure, 3-year repayment with 3-month moratorium) directly confirmed on nsfdc.nic.in/en/micro-credit-finance and cross-checked against 3 independent secondary sources citing the same page -- all consistent. Income limit (Rs.3 lakh) taken from NSFDC's general eligibility norm, consistent with the corrected NSFDC007 figure.",
+    "dataStatus": "verified",
+    "incomeLimit": 300000,
+    "minimumLoanAmount": null,
+    "minimumLoanAmountRaw": "Not fixed",
+    "maximumLoanAmount": 125000,
+    "maximumProjectCost": 140000,
+    "minimumAge": 18,
+    "maximumAge": null,
+    "maximumAgeRaw": "Not specified"
+  },
+  {
+    "schemeId": "NSFDC009",
+    "schemeName": "NSFDC Educational Loan Scheme",
+    "organization": "National Scheduled Castes Finance and Development Corporation (NSFDC), Ministry of Social Justice & Empowerment",
+    "schemeType": "Concessional Educational Loan",
+    "description": "One-time loan assistance for Scheduled Caste students pursuing full-time professional/technical courses in India or abroad, up to Rs.30 lakh (India) or Rs.40 lakh (abroad), or 90% of course fee, whichever is less.",
+    "entrepreneurshipRelevance": "Matches the PS-cited 'Educational Loan Scheme' -- supports the skilling/education pathway that can precede or complement entrepreneurship for SC youth.",
+    "targetGroups": [
+      "SC (Scheduled Castes)"
+    ],
+    "genderRequirement": "None mandatory; women beneficiaries receive an additional 0.5% interest rebate",
+    "stateRestriction": "None (all-India, via State Channelising Agencies)",
+    "otherBeneficiaryConditions": "No other education loan or scholarship should be availed for the same course; one-time assistance only",
+    "beneficiaryContribution": "Remaining ~10% of course fee (or full excess above the cap)",
+    "interestRate": "India: NSFDC charges 2% p.a. to SCA, which charges 6% p.a. to beneficiary. Abroad: NSFDC charges 3% p.a. to SCA, which charges 7% p.a. to beneficiary. Women get an additional 0.5% rebate in both cases.",
+    "repaymentPeriod": "Up to 10 years (loans up to Rs.10 lakh); up to 12 years (loans above Rs.10 lakh)",
+    "moratoriumPeriod": "6 months after course completion or securing employment, whichever is earlier",
+    "businessTypes": [
+      "Not applicable (educational loan, not a business loan)"
+    ],
+    "supportedPurposes": [
+      "Admission fee, tuition fee, books, stationery, equipment, examination fee, hostel/mess expenses, insurance premium, travel/visa expenses (for abroad study), caution money, development fund, clothing allowance"
+    ],
+    "eligibleActivities": [
+      "Regular full-time Professional/Technical courses at the graduate level and higher (e.g. engineering, medicine, management, architecture) recognized/approved by the Government, in India or abroad"
+    ],
+    "newBusinessAllowed": false,
+    "existingBusinessAllowed": false,
+    "eligibilityRules": "Applicant must belong to Scheduled Caste community; annual family income within Rs.3 lakh; must have secured admission (merit-based) to a recognized full-time professional/technical course; no other loan/scholarship for the same course",
+    "mandatoryConditions": "SC caste certificate; proof of admission; income certificate",
+    "exclusionConditions": "Part-time or non-professional/non-technical courses; applicants already receiving another loan/scholarship for the same course; income above prescribed limit",
+    "requiredDocuments": [
+      "SC caste certificate",
+      "income certificate",
+      "proof of admission with fee schedule",
+      "identity proof",
+      "academic records",
+      "embassy/consulate confirmation (for abroad study)"
+    ],
+    "optionalDocuments": [
+      "Foreign exchange permit, institute ID card (for abroad study cases)"
+    ],
+    "applicationMethod": "Apply through the State Channelising Agency (SCA) in the prescribed NSFDC format",
+    "applicationAuthority": "NSFDC (apex), via State Channelising Agencies",
+    "channelisingAgency": "State SC Development Corporations (SCDCs); Public Sector Banks; Regional Rural Banks",
+    "applicationUrl": "https://nsfdc.nic.in/",
+    "officialSourceUrl": "https://nsfdc.nic.in/en/educational-loan-scheme",
+    "sourceDocument": "NSFDC Educational Loan Scheme page (official site)",
+    "sourceDate": "Current as published on official site",
+    "lastVerified": "2026-08-30",
+    "verificationNotes": "Core figures (Rs.30L India / Rs.40L abroad cap, 90% of course fee rule, 6%/7% beneficiary interest rates, 10/12-year repayment tiers, 6-month post-course moratorium) cross-confirmed across 6+ independent secondary sources, all citing the same official nsfdc.nic.in/en/educational-loan-scheme page. Income limit (Rs.3 lakh) consistent with NSFDC's general eligibility norm.",
+    "dataStatus": "verified",
+    "incomeLimit": 300000,
+    "minimumLoanAmount": null,
+    "minimumLoanAmountRaw": "Not fixed",
+    "maximumLoanAmount": 4000000,
+    "maximumProjectCost": null,
+    "maximumProjectCostRaw": "Actual course fee, capped at Rs.30 lakh (India) / Rs.40 lakh (abroad) or 90% of course fee, whichever is less",
+    "minimumAge": null,
+    "minimumAgeRaw": "Not specified (student must have secured admission)",
+    "maximumAge": null,
+    "maximumAgeRaw": "Not specified"
+  }
+]

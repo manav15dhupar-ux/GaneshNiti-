@@ -29,8 +29,9 @@ def _try_connect():
     global _firestore_client, _firestore_available
 
     cred_path = os.environ.get("FIREBASE_CREDENTIALS_PATH", "serviceAccountKey.json")
-    if not Path(cred_path).exists():
-        print(f"[firestore_client] No credentials file at '{cred_path}' -- using local JSON fallback.")
+    cred_json = os.environ.get("FIREBASE_CREDENTIALS_JSON")  # for hosts that can't hold a key file
+    if not cred_json and not Path(cred_path).exists():
+        print(f"[firestore_client] No credentials ('{cred_path}' or FIREBASE_CREDENTIALS_JSON) -- using local JSON fallback.")
         return None
 
     try:
@@ -38,7 +39,7 @@ def _try_connect():
         from firebase_admin import credentials, firestore
 
         if not firebase_admin._apps:
-            cred = credentials.Certificate(cred_path)
+            cred = credentials.Certificate(json.loads(cred_json)) if cred_json else credentials.Certificate(cred_path)
             firebase_admin.initialize_app(cred)
 
         client = firestore.client()

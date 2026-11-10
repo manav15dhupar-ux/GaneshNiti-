@@ -1,48 +1,22 @@
-// app.js — Day 2 version.
-// DUMMY_RESULTS below stands in for what the real backend will return from
-// POST /recommend on Day 3+. The shape matches what upload_schemes.py /
-// the eligibility engine will actually produce, so swapping in the real
-// fetch() call later shouldn't require changing renderResults() at all.
+// app.js — form submission + results rendering for GaneshNiti.
+// Results always come from the real backend (POST /recommend); nothing here is mocked.
 
-const DUMMY_RESULTS = [
-  {
-    schemeName: "NSFDC Micro Credit Finance Scheme",
-    eligible: true,
-    matchScore: 92,
-    reasons: [
-      "Category matches scheme target group (SC)",
-      "Income is within the ₹3,00,000 limit",
-      "Project cost is within the ₹1.40 lakh limit",
-    ],
-    emi: { monthlyEmi: 3805, totalInterest: 12250 },
-    requiredDocuments: ["SC caste certificate", "Income certificate", "Identity proof"],
-    officialSourceUrl: "https://nsfdc.nic.in/en/micro-credit-finance",
-  },
-  {
-    schemeName: "NSFDC Term Loan Scheme",
-    eligible: true,
-    matchScore: 78,
-    reasons: [
-      "Category matches scheme target group (SC)",
-      "Income is within the ₹3,00,000 limit",
-      "Requested amount is well within the ₹45,00,000 limit",
-    ],
-    emi: { monthlyEmi: 4980, totalInterest: 46200 },
-    requiredDocuments: ["SC caste certificate", "Income certificate", "Project report"],
-    officialSourceUrl: "https://nsfdc.nic.in/en/term-loan",
-  },
-  {
-    schemeName: "Stand-Up India Scheme",
-    eligible: false,
-    matchScore: 21,
-    reasons: [
-      "This scheme requires a greenfield (brand new) enterprise — an existing business does not qualify",
-    ],
-    emi: null,
-    requiredDocuments: [],
-    officialSourceUrl: "https://www.standupmitra.in/",
-  },
-];
+// Same origin by default. When the page is opened straight from disk (file://),
+// fall back to a locally running backend.
+const API_BASE =
+  window.GANESHNITI_API_BASE ||
+  (window.location.protocol === "file:" ? "http://127.0.0.1:8000" : "");
+
+function escapeHtml(str) {
+  const div = document.createElement("div");
+  div.textContent = str == null ? "" : String(str);
+  return div.innerHTML;
+}
+
+// Only ever link to http(s) URLs coming from data.
+function safeUrl(url) {
+  return typeof url === "string" && /^https?:\/\//i.test(url) ? url : null;
+}
 
 function renderResults(results) {
   const container = document.getElementById("results-list");
@@ -52,7 +26,6 @@ function renderResults(results) {
     container.innerHTML = `<p class="text-muted">No matching schemes found. Try adjusting your details.</p>`;
     return;
   }
-
   container.innerHTML = results.map(renderSchemeCard).join("");
 }
 
@@ -61,17 +34,16 @@ function renderSchemeCard(scheme) {
     ? `<span class="badge badge-eligible">Potentially eligible</span>`
     : `<span class="badge badge-ineligible">Not eligible</span>`;
 
-  // The numeric trace IS the differentiator -- show every rule checked,
-  // not just a final yes/no.
+  // The numeric trace IS the differentiator: show every rule checked, not just yes/no.
   const traceRows = (scheme.trace || []).map(t => {
     const icon = t.passed ? "&#10003;" : "&#10007;";
     const detail = t.detail ? ` (${escapeHtml(t.detail)})` : "";
-    return `<li>${icon} <strong>${escapeHtml(t.rule)}:</strong> ${escapeHtml(String(t.userValue))} vs ${escapeHtml(String(t.schemeLimit))}${detail}</li>`;
+    return `<li>${icon} <strong>${escapeHtml(t.rule)}:</strong> ${escapeHtml(t.userValue)} vs ${escapeHtml(t.schemeLimit)}${detail}</li>`;
   }).join("");
 
   const repaymentBlock = scheme.repayment
-    ? `<p class="mb-1"><strong>Quarterly repayment:</strong> &#8377;${scheme.repayment.quarterlyInstallment.toLocaleString("en-IN")}
-       (${scheme.repayment.numInstallments} installments at ${scheme.repayment.annualInterestRate}% p.a.)</p>`
+    ? `<p class="mb-1"><strong>Quarterly repayment:</strong> &#8377;${Number(scheme.repayment.quarterlyInstallment).toLocaleString("en-IN")}
+       (${escapeHtml(scheme.repayment.numInstallments)} installments at ${escapeHtml(scheme.repayment.annualInterestRate)}% p.a.)</p>`
     : "";
 
   const partnersBlock = (scheme.suggestedPartners && scheme.suggestedPartners.length)
@@ -79,45 +51,57 @@ function renderSchemeCard(scheme) {
        <ul>${scheme.suggestedPartners.map(p => `<li>${escapeHtml(p.partnerName)} (${escapeHtml(p.partnerType)}, ${escapeHtml(p.district || p.state)})</li>`).join("")}</ul>`
     : "";
 
+  const docs = (scheme.requiredDocuments || []);
+  const docsBlock = scheme.eligible && docs.length
+    ? `<details class="mt-2"><summary>Documents to keep ready (${docs.length})</summary>
+         <ul style="font-size:0.85rem;">${docs.map(d => `<li>${escapeHtml(d)}</li>`).join("")}</ul></details>`
+    : "";
+
+  const src = safeUrl(scheme.officialSourceUrl);
+  const sourceBlock = src
+    ? `<p class="mt-2 mb-0" style="font-size:0.8rem;"><a href="${escapeHtml(src)}" target="_blank" rel="noopener noreferrer">Official source</a>${
+        scheme.lastVerified ? ` &middot; verified ${escapeHtml(scheme.lastVerified)}` : ""}</p>`
+    : "";
+
   return `
     <div class="col-md-6 col-lg-4">
       <div class="scheme-card">
         <div class="d-flex justify-content-between align-items-start mb-2">
           <h5>${escapeHtml(scheme.schemeName)}</h5>
-          <span class="match-score">${scheme.matchScore}</span>
+          <span class="match-score">${escapeHtml(scheme.matchScore)}</span>
         </div>
         ${badge}
         <ul class="mt-3" style="font-size:0.85rem;">${traceRows}</ul>
         ${repaymentBlock}
         ${partnersBlock}
+        ${docsBlock}
+        ${sourceBlock}
       </div>
     </div>
   `;
 }
 
-function escapeHtml(str) {
-  const div = document.createElement("div");
-  div.textContent = str;
-  return div.innerHTML;
-}
-
-const API_BASE = "http://127.0.0.1:8000"; // change this if your backend runs elsewhere
-
-// Profile form: collects the real form fields + free text, sends them to
-// the real backend, and stores the response so results.html can render it.
+// Profile form: collect fields + free text, call the backend, hand the response
+// to results.html via sessionStorage (survives the redirect, cleared with the tab).
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("profile-form");
   if (!form) return;
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    const button = form.querySelector("button[type=submit]");
+    const originalLabel = button.textContent;
+    button.disabled = true;
+    button.textContent = "Finding schemes...";
 
+    const isNew = document.getElementById("isNewBusiness").value;
     const payload = {
       category: document.getElementById("category").value,
-      state: document.getElementById("state").value,
+      state: document.getElementById("state").value.trim(),
       annualIncome: Number(document.getElementById("income").value) || null,
-      businessType: document.getElementById("businessType").value,
+      businessType: document.getElementById("businessType").value.trim(),
       amountRequired: Number(document.getElementById("amount").value) || null,
+      isNewBusiness: isNew === "" ? null : isNew === "true",
       requirement: document.getElementById("requirement").value,
     };
 
@@ -127,19 +111,16 @@ document.addEventListener("DOMContentLoaded", () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-
-      if (!response.ok) {
-        throw new Error(`Backend returned ${response.status}`);
-      }
+      if (!response.ok) throw new Error(`Backend returned ${response.status}`);
 
       const data = await response.json();
-      // sessionStorage survives the redirect to results.html but clears
-      // when the tab closes -- fine for a demo, no backend session needed.
       sessionStorage.setItem("recommendResults", JSON.stringify(data.results));
       window.location.href = "results.html";
     } catch (err) {
       console.error("Failed to get recommendation:", err);
-      alert("Couldn't reach the backend. Is it running? (uvicorn main:app --reload)");
+      alert("Couldn't reach the server. If you are running locally, start it with: uvicorn main:app --reload (inside backend/)");
+      button.disabled = false;
+      button.textContent = originalLabel;
     }
   });
 });
